@@ -33,7 +33,7 @@ export default {
 
     const scissors = new ButtonBuilder()
       .setCustomId("scissors")
-      .setLabel("scissors ✂")
+      .setLabel("Scissors ✂")
       .setStyle(ButtonStyle.Secondary);
     const row = new ActionRowBuilder().addComponents(rock, paper, scissors);
 
