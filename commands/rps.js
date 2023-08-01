@@ -54,7 +54,6 @@ export default {
     let user = [];
     collector.on("collect", async (buttonInteraction) => {
       await buttonInteraction.deferReply();
-      console.log(buttonInteraction);
 
       const choice = buttonInteraction.customId;
 
@@ -63,7 +62,6 @@ export default {
         choice,
       });
 
-      console.log(user);
       if (user.length === 2) {
         const user1Choice = user[0].choice;
         const user2Choice = user[1].choice;
